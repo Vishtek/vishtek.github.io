@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products - VishTek Group</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="assets/styles.css" rel="stylesheet">
+  <script src="assets/script.js" defer></script>
+   <!-- Favicon -->
+  <link rel="icon" href="assets/Vtb.png" type="image/png">
+
+</head>
+<body>
+  
+<header class="fixed top-0 left-0 w-full z-50 bg-white shadow">
+  <div class="container mx-auto p-4">
+    <!-- Top Row: Logo + Title -->
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-4 sm:space-y-0">
+		<a href="index.html" class="flex items-center space-x-2 hover:opacity-80">
+		<img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
+		<h1 class="text-2xl sm:text-3xl font-bold text-[#000080]">VishTek Group</h1>
+		</a>
+
+      <!-- Navigation -->
+      <nav class="flex flex-wrap gap-2 justify-center sm:justify-end">
+        <a href="index.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Home</a>
+        <a href="about.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">About Us</a>
+        <a href="products.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Products</a>
+        <a href="partners.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Partners</a>
+        <a href="contact.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Contact Us</a>
+		<a href="careers.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Careers</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+  
+<!-- Products -->
+  <section id="products" class="text-center pt-24 pb-20">
+  <img src="assets/VishTek.png" class="section-img mx-auto mb-6" alt="Industrial Electrical Background">
+  <div class="p-4 rounded shadow">
+
+    <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">Our Products</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Cables -->
+      <div class="p-4 rounded shadow card">
+        <img src="assets/Cable.png" class="section-img" alt="Cables" onclick="toggleList('cablesList')">
+        <button onclick="toggleList('cablesList')" class="font-semibold text-lg text-yellow-300 w-full text-left">Cables</button>
+        <p>We specialize in robust, high-performance cables tailored for industrial and oil & gas environments.</p>
+			<div class="text-left">
+				<ul id="cablesList" class="list-disc list-inside text-sm mt-2 hidden">
+				  <li>Power Cables</li>
+				  <li>Control Cables</li>
+				  <li>Instrumentation Cables</li>
+				  <li>Telecom Cables</li>
+				  <li>Fiber Optic Cables</li>
+				  <li>Welding Cables</li>
+				</ul>
+			</div>
+      </div>
+
+      <!-- Earthing & Lightning Protection -->
+      <div class="p-4 rounded shadow card">
+        <img src="assets/earth.png" class="section-img" alt="Earthing" onclick="toggleList('earthingList')">
+        <button onclick="toggleList('earthingList')" class="font-semibold text-lg text-yellow-300 w-full text-left">Earthing & Lightning Protection</button>
+        <p>We offer a wide range of high-quality earthing materials suitable for various industrial needs.</p>
+		<div class="text-left">
+			<ul id="earthingList" class="list-disc list-inside text-sm mt-2 hidden">
+			  <li>Conductors</li>
+			  <li>Earth Rods</li>
+			  <li>Earth Clamps</li>
+			  <li>Ground Bars</li>
+			  <li>Terminals</li>
+			  <li>Exothermic Welding Material</li>
+			</ul>
+		</div>
+      </div>
+
+      <!-- Cable Accessories -->
+      <div class="p-4 rounded shadow card">
+        <img src="assets/cableacces.png" class="section-img" alt="Cable Accessories" onclick="toggleList('accessoriesList')">
+        <button onclick="toggleList('accessoriesList')" class="font-semibold text-lg text-yellow-300 w-full text-left">Cable Accessories</button>
+        <p>Essential components for safe and efficient cable connections and terminations.</p>
+			<div class="text-left">
+				<ul id="accessoriesList" class="list-disc list-inside text-sm mt-2 hidden">
+				  <li>Cable Glands</li>
+				  <li>Cable Cleats</li>
+				  <li>Cable Lugs</li>
+				  <li>Termination Kits</li>
+				  <li>Exe Plugs</li>
+				  <li>Cable Ties</li>
+				</ul>
+			</div>
+      </div>
+
+      <!-- Cable Management -->
+      <div class="p-4 rounded shadow card">
+        <img src="assets/cablemang.png" class="section-img" alt="Cable Management" onclick="toggleList('managementList')">
+        <button onclick="toggleList('managementList')" class="font-semibold text-lg text-yellow-300 w-full text-left">Cable Management</button>
+        <p>Reliable infrastructure for routing and protecting your critical cabling systems.</p>
+			<div class="text-left">
+				<ul id="managementList" class="list-disc list-inside text-sm mt-2 hidden">
+				  <li>Cable Trays</li>
+				  <li>Cable Ladders</li>
+				  <li>Cable Tray Supports</li>
+				  <li>Conduits</li>
+				  <li>HDPE Corrugated Conduits</li>
+				</ul>
+			</div>
+      </div>
+
+      <!-- Explosionproof Materials -->
+      <div class="p-4 rounded shadow card">
+        <img src="assets/Expenssionproof.png" class="section-img" alt="Explosionproof" onclick="toggleList('explosionproofList')">
+        <button onclick="toggleList('explosionproofList')" class="font-semibold text-lg text-yellow-300 w-full text-left">Explosionproof Materials</button>
+        <p>Certified materials for hazardous zones and explosive environments.</p>
+			<div class="text-left">
+				<ul id="explosionproofList" class="list-disc list-inside text-sm mt-2 hidden">
+				  <li>Exe Enclosures </li>
+				  <li>Exe Junction Boxes</li>
+				  <li>Exe Lighting Fixtures</li>
+				  <li>Exe Aircraft Warning Lights</li>
+				</ul>
+			</div>
+      </div>
+
+      <!-- Lighting Poles -->
+      <div class="p-4 rounded shadow card">
+        <img src="assets/polesstands.png" class="section-img" alt="Lighting Poles" onclick="toggleList('polesList')">
+        <button onclick="toggleList('polesList')" class="font-semibold text-lg text-yellow-300 w-full text-left">Lighting Poles & Supports</button>
+        <p>Sturdy and weather-resistant structures to elevate industrial and commercial lighting systems.</p>
+			<div class="text-left">
+				<ul id="polesList" class="list-disc list-inside text-sm mt-2 hidden">
+					<button onclick="toggleList('LightingPoles')" class="font-semibold text-lg text-yellow-300 w-full text-left">Ploes</button>
+					<ul id="LightingPoles" class="list-disc list-inside text-sm mt-2 hidden">
+						<img src="assets/Pole.png" class="section-img" alt="Lighting Poles">
+					</ul>
+				  <li>Lighting Poles</li>
+				  <li>Instrumentation Stanchions</li>
+				  <li>Cable Tray Supports</li>
+				</ul>
+			</div>
+      </div>
+
+      <!-- Instrumentation -->
+      <div class="p-4 rounded shadow card">
+        <img src="assets/instrument.png" class="section-img" alt="Instrumentation" onclick="toggleList('instrumentationList')">
+        <button onclick="toggleList('instrumentationList')" class="font-semibold text-lg text-yellow-300 w-full text-left">Instrumentation</button>
+        <p>Precision instruments and components for monitoring and control applications.</p>
+			<div class="text-left">
+				<ul id="instrumentationList" class="list-disc list-inside text-sm mt-2 hidden">
+				  <li>Seamless Instrumentation Tubes</li>
+				  <li>Tube Fittings & Manifold Assemblies</li>
+				  <li>Valves</li>
+				  <li>Process Transmitters (Pressure, Flow, Level)</li>
+				</ul>
+			</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+<footer class="text-center p-4 text-sm">
+  &copy; 2025 VishTek Group 
+</footer>
+
+</body>
+</html>
