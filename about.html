@@ -4,47 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - VishTek Group</title>
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="assets/styles.css" rel="stylesheet">
-   <script src="assets/script.js"></script>
-    <!-- Favicon -->
-  <link rel="icon" href="assets/Vtb.png" type="image/png">
+
+  <!-- JavaScript -->
+  <script src="assets/script.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/Vtb.png" type="image/png" />
+  <!-- Optional fallback -->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  
+
+<!-- Header -->
 <header class="fixed top-0 left-0 w-full z-50 bg-white shadow">
   <div class="container mx-auto p-4">
-    <!-- Top Row: Logo + Title -->
     <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-4 sm:space-y-0">
       <a href="index.html" class="flex items-center space-x-2 hover:opacity-80">
-		<img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
-		<h1 class="text-2xl sm:text-3xl font-bold text-[#000080]">VishTek Group</h1>
-		</a>
-
-      <!-- Navigation -->
+        <img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
+        <h1 class="text-2xl sm:text-3xl font-bold text-[#000080]">VishTek Group</h1>
+      </a>
       <nav class="flex flex-wrap gap-2 justify-center sm:justify-end">
         <a href="index.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Home</a>
         <a href="about.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">About Us</a>
         <a href="products.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Products</a>
         <a href="partners.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Partners</a>
         <a href="contact.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Contact Us</a>
-		<a href="careers.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Careers</a>
+        <a href="careers.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Careers</a>
       </nav>
     </div>
   </div>
 </header>
 
-
-
-  
-<section id="about" class="text-center pt-24 pb-18">
-  <img src="assets/VishTek.png" class="section-img mx-auto mb-6" alt="Industrial Electrical Background">
-	<div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-left">About Us</h2>
-		<p class="text-justify text-left">VishTek Group based in Sharjah, UAE, is a specialized trading and technical solutions provider serving the Oil & Gas, Power Generation, and Desalination sectors across the Middle East and South Asia. Founded by an industry veteran with over 17 years of hands-on experience, VishTek is built on deep domain knowledge and a commitment to engineering excellence. We offer fit-for-purpose products, reliable logistics, and customized technical support for EPC contractors, utilities, and industrial end users. With active representation in Qatar, Saudi Arabia, Oman, and India, we deliver globally sourced solutions with regional responsiveness, ensuring compliance, quality, and performance on every project.</p>
+<!-- About Section -->
+<section id="about" class="text-center pt-24 pb-18 px-4 sm:px-0">
+  <img src="assets/VishTek.png" class="section-img mx-auto mb-6 rounded-lg" alt="Industrial Electrical Background">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-left">About Us</h2>
+    <p class="text-justify text-left">
+      VishTek Group based in Sharjah, UAE, is a specialized trading and technical solutions provider serving the Oil & Gas, Power Generation, and Desalination sectors across the Middle East and South Asia. Founded by an industry veteran with over 17 years of hands-on experience, VishTek is built on deep domain knowledge and a commitment to engineering excellence. We offer fit-for-purpose products, reliable logistics, and customized technical support for EPC contractors, utilities, and industrial end users. With active representation in Qatar, Saudi Arabia, Oman, and India, we deliver globally sourced solutions with regional responsiveness, ensuring compliance, quality, and performance on every project.
+    </p>
   </div>
- </section>
-<section id="vision mission" class="text-center pt-12 pb-18">
+</section>
+
+<!-- Vision & Mission -->
+<section id="vision-mission" class="text-center pt-12 pb-18 px-4 sm:px-0">
   <div class="max-w-4xl mx-auto mb-8">
     <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-left">Vision</h2>
     <p class="text-justify text-left">
@@ -67,8 +74,7 @@
   </div>
 </section>
 
-
-  
+<!-- Footer -->
 <footer class="text-center p-4 text-sm">
   &copy; 2025 VishTek Group
 </footer>
