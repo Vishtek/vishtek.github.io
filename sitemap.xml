@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vishtek.github.io/</loc>
+    <loc>https://www.vishtekgroup.com/</loc>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vishtek.github.io/about.html</loc>
+    <loc>https://www.vishtekgroup.com/about.html</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vishtek.github.io/products.html</loc>
+    <loc>https://www.vishtekgroup.com/products.html</loc>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vishtek.github.io/partners.html</loc>
+    <loc>https://www.vishtekgroup.com/partners.html</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vishtek.github.io/contact.html</loc>
+    <loc>https://www.vishtekgroup.com/contact.html</loc>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vishtek.github.io/careers.html</loc>
+    <loc>https://www.vishtekgroup.com/careers.html</loc>
+    <priority>0.7</priority>
   </url>
 </urlset>
