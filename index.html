@@ -3,49 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VishTek Group - Home</title>
+
+  <!-- Page Title -->
+  <title>VishTek Group | Electrical, Instrumentation & Oil/Gas Solutions in UAE</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="VishTek Group provides electrical solutions, instrumentation, and oil & gas supplies across UAE & GCC. Trusted sourcing partner with technical expertise and fast delivery.">
+
+  <!-- Keywords (optional) -->
+  <meta name="keywords" content="Electrical solutions UAE, Instrumentation UAE, Oil & Gas equipment UAE, VishTek Group, Industrial supplies UAE">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://vishtekgroup.github.io/index.htm" />
+
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="VishTek Group | Electrical, Instrumentation & Oil/Gas Solutions in UAE" />
+  <meta property="og:description" content="Trusted supplier of electrical, instrumentation, and oil & gas products for industrial and infrastructure projects across UAE & GCC." />
+  <meta property="og:image" content="https://vishtekgroup.github.io/assets/Vtb.png" />
+  <meta property="og:url" content="https://vishtekgroup.github.io/index.htm" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
   <link href="assets/styles.css" rel="stylesheet">
-   <!-- Favicon -->
- <!-- <link rel="icon" href="assets/Vtb.png" type="image/png" -->
-  <link rel="icon" type="image/png" href="/assets/Vtb.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/Vtb.png" type="image/png">
+  
+  <!-- JavaScript -->
+  <script src="assets/Main.js" defer></script>
+  
+  <!-- JavaScript 
+  <script src="assets/script.js" defer></script>
+  
+  <!-- SEO Structured Data 
+  <script src="assets/seo.js" defer></script>-->
 </head>
+
 <body>
   
+<!-- Updated Navigation Bar with Drawer -->
 <header class="fixed top-0 left-0 w-full z-50 bg-white shadow">
-  <div class="container mx-auto p-4">
-    <!-- Top Row: Logo + Title -->
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-4 sm:space-y-0">
-      <a href="index.html" class="flex items-center space-x-2 hover:opacity-80">
-		<img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
-		<h1 class="text-2xl sm:text-3xl font-bold text-[#000080]">VishTek Group</h1>
-		</a>
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo & Title -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
+      <h1 class="text-2xl font-bold text-[#000080]">VishTek Group</h1>
+    </a>
 
-      <!-- Navigation -->
-      <nav class="flex flex-wrap gap-2 justify-center sm:justify-end">
-        <a href="index.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Home</a>
-        <a href="about.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">About Us</a>
-        <a href="products.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Products</a>
-        <a href="partners.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Partners</a>
-        <a href="contact.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Contact Us</a>
-		<a href="careers.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Careers</a>
-      </nav>
-    </div>
+    <!-- Hamburger Menu (Mobile) -->
+    <button id="menuToggle" class="sm:hidden text-[#000080] text-3xl focus:outline-none">
+      &#9776;
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden sm:flex gap-4 text-[#000080]">
+      <a href="index.html" class="hover:text-yellow-400">Home</a>
+      <a href="about.html" class="hover:text-yellow-400">About Us</a>
+      <a href="products.html" class="hover:text-yellow-400">Our Products</a>
+      <a href="partners.html" class="hover:text-yellow-400">Our Partners</a>
+      <a href="contact.html" class="hover:text-yellow-400">Contact Us</a>
+      <a href="careers.html" class="hover:text-yellow-400">Careers</a>
+    </nav>
   </div>
+
+  <!-- Mobile Drawer Menu -->
+	<div id="mobileMenu" class="sm:hidden fixed top-0 left-0 h-full w-64 bg-white shadow transform -translate-x-full transition-transform duration-300 z-50">
+	  <div class="flex justify-between items-center p-4 border-b">
+		<h2 class="text-xl font-bold text-[#000080]">Menu</h2>
+		<button id="closeMenu" class="text-2xl text-[#000080]">&times;</button>
+	  </div>
+	  <nav class="flex flex-col p-4 text-[#000080]">
+		<a href="index.html" class="py-2 border-b hover:text-yellow-400">Home</a>
+		<a href="about.html" class="py-2 border-b hover:text-yellow-400">About Us</a>
+		<a href="products.html" class="py-2 border-b hover:text-yellow-400">Our Products</a>
+		<a href="partners.html" class="py-2 border-b hover:text-yellow-400">Our Partners</a>
+		<a href="contact.html" class="py-2 border-b hover:text-yellow-400">Contact Us</a>
+		<a href="careers.html" class="py-2 border-b hover:text-yellow-400">Careers</a>
+	  </nav>
+	</div>
+
+	<!-- Overlay for Drawer -->
+	<div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+
 </header>
   
 <section id="home" class="text-center pt-24 pb-20">
   <img src="assets/VishTek.png" class="section-img mx-auto mb-6" alt="Industrial Electrical Background">
 
-  <div>
+<div>
     <h3 class="text-3xl font-bold text-yellow-400 mb-3">Your Global Sourcing Partner</h3>
     <p class="text-lg max-w-2xl mx-auto">Empowering Infrastructure Through Quality, Speed & Technical Depth</p>
     <a href="about.html" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-2 rounded font-semibold">Learn More</a>
-  </div>
+  </div> 
 </section>
 
 <!-- 2. What We Do Preview -->
-<section class="py-10 bg-gray-900 text-white px-4 sm:px-0">
+<section class="py-4 bg-gray-900 text-white px-4 sm:px-0">
   <div class="max-w-6xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-4 text-yellow-300">What We Do</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -93,7 +152,7 @@
 
 
   
-<footer class="text-center p-4 text-sm">
+<footer class="bg-[#0a0f2c] text-center text-sm py-4 mt-12 border-t border-gray-700">
   &copy; 2025 VishTek Group 
 </footer>
 
