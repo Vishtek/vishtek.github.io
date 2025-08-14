@@ -3,51 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Products - VishTek Group</title>
+
+  <!-- Page Title -->
+  <title>Careers | VishTek Group - Electrical & Instrumentation Jobs UAE</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Explore career opportunities at VishTek Group in Sharjah, UAE. Join our team of professionals in electrical, instrumentation, and industrial solutions. Send your CV today.">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="VishTek careers, jobs UAE, electrical jobs Sharjah, instrumentation jobs, industrial solutions jobs, UAE careers">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://vishtekgroup.github.io/careers.html" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Careers | VishTek Group - Electrical & Instrumentation Jobs UAE" />
+  <meta property="og:description" content="Join VishTek Group in Sharjah, UAE for exciting career opportunities in electrical, instrumentation, and industrial solutions. Submit your CV today." />
+  <meta property="og:image" content="https://vishtekgroup.github.io/assets/Vtb.png" />
+  <meta property="og:url" content="https://vishtekgroup.github.io/careers.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom Styles -->
   <link href="assets/styles.css" rel="stylesheet">
-  <script src="assets/script.js" defer></script>
-   <!-- Favicon -->
-  <link rel="icon" href="assets/Vtb.png" type="image/png">
-
-</head>
-<body>
   
+  <!-- JavaScript -->
+  <script src="assets/Main.js" defer></script>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/Vtb.png" type="image/png">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<!-- Updated Navigation Bar with Drawer -->
 <header class="fixed top-0 left-0 w-full z-50 bg-white shadow">
-  <div class="container mx-auto p-4">
-    <!-- Top Row: Logo + Title -->
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-4 sm:space-y-0">
-      <a href="index.html" class="flex items-center space-x-2 hover:opacity-80">
-		<img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
-		<h1 class="text-2xl sm:text-3xl font-bold text-[#000080]">VishTek Group</h1>
-		</a>
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo & Title -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
+      <h1 class="text-2xl font-bold text-[#000080]">VishTek Group</h1>
+    </a>
 
-      <!-- Navigation -->
-      <nav class="flex flex-wrap gap-2 justify-center sm:justify-end">
-        <a href="index.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Home</a>
-        <a href="about.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">About Us</a>
-        <a href="products.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Products</a>
-        <a href="partners.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Partners</a>
-        <a href="contact.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Contact Us</a>
-      <a href="careers.html" class="text-yellow-400 font-semibold">Careers</a>
+    <!-- Hamburger Menu (Mobile) -->
+    <button id="menuToggle" class="sm:hidden text-[#000080] text-3xl focus:outline-none">
+      &#9776;
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden sm:flex gap-4 text-[#000080]">
+      <a href="index.html" class="hover:text-yellow-400">Home</a>
+      <a href="about.html" class="hover:text-yellow-400">About Us</a>
+      <a href="products.html" class="hover:text-yellow-400">Our Products</a>
+      <a href="partners.html" class="hover:text-yellow-400">Our Partners</a>
+      <a href="contact.html" class="hover:text-yellow-400">Contact Us</a>
+      <a href="careers.html" class="hover:text-yellow-400">Careers</a>
     </nav>
-  </header>
+  </div>
 
-  <section class="text-center pt-24 pb-20">
-	<img src="assets/VishTek.png" class="section-img mx-auto mb-6" alt="Industrial Electrical Background">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">Join Our Team</h2>
-	<p class="mb-4">We're always looking for passionate and talented professionals to join us on our journey of innovation and growth.</p>
-    <p class="mb-6">If you're interested in future opportunities with VishTek Group, we’d love to hear from you. Please send your CV to:</p>
-    <p class="text-lg font-semibold text-yellow-300">
-      
-	  <p><i class="fas fa-envelope mr-2 text-yellow-400"></i> info@vishtekgroup.com</p>
-    </p>
-   
-  </section>
+  <!-- Mobile Drawer Menu -->
+	<div id="mobileMenu" class="sm:hidden fixed top-0 left-0 h-full w-64 bg-white shadow transform -translate-x-full transition-transform duration-300 z-50">
+	  <div class="flex justify-between items-center p-4 border-b">
+		<h2 class="text-xl font-bold text-[#000080]">Menu</h2>
+		<button id="closeMenu" class="text-2xl text-[#000080]">&times;</button>
+	  </div>
+	  <nav class="flex flex-col p-4 text-[#000080]">
+		<a href="index.html" class="py-2 border-b hover:text-yellow-400">Home</a>
+		<a href="about.html" class="py-2 border-b hover:text-yellow-400">About Us</a>
+		<a href="products.html" class="py-2 border-b hover:text-yellow-400">Our Products</a>
+		<a href="partners.html" class="py-2 border-b hover:text-yellow-400">Our Partners</a>
+		<a href="contact.html" class="py-2 border-b hover:text-yellow-400">Contact Us</a>
+		<a href="careers.html" class="py-2 border-b hover:text-yellow-400">Careers</a>
+	  </nav>
+	</div>
 
- <footer class="text-center p-4 text-sm">
-  &copy; 2025 VishTek Group 
+	<!-- Overlay for Drawer -->
+	<div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+</header>
+
+<section class="text-center pt-24 pb-20">
+  <img src="assets/VishTek.png" class="section-img mx-auto mb-6" alt="Industrial Electrical Background">
+  <h2 class="text-3xl font-bold text-yellow-400 mb-6 text-center">Join Our Team</h2>
+  <p class="mb-4">We're always looking for passionate and talented professionals to join us on our journey of innovation and growth.</p>
+  <p class="mb-6">If you're interested in future opportunities with VishTek Group, we’d love to hear from you. Please send your CV to:</p>
+  <p class="text-lg font-semibold text-yellow-300">
+    <i class="fas fa-envelope mr-2 text-yellow-400"></i> info@vishtekgroup.com
+  </p>
+</section>
+
+<footer class="bg-[#0a0f2c] text-center text-sm py-4 mt-12 border-t border-gray-700">
+  &copy; 2025 VishTek Group. 
 </footer>
 </body>
 </html>
