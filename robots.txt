@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vishtek.github.io/sitemap.xml
+Sitemap: https://www.vishtekgroup.com/sitemap.xml
