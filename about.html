@@ -3,40 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - VishTek Group</title>
+
+  <!-- Page Title -->
+  <title>About VishTek Group | Electrical, Instrumentation & Oil/Gas Solutions UAE</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Learn about VishTek Group, a UAE-based provider of electrical, instrumentation, and oil & gas solutions. Over 17 years of expertise serving Oil & Gas, Power, and Desalination sectors across the Middle East & South Asia.">
+
+  <!-- Keywords (optional) -->
+  <meta name="keywords" content="About VishTek Group, Electrical solutions UAE, Instrumentation UAE, Oil & Gas supplies UAE, Industrial solutions UAE">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://vishtekgroup.github.io/about.html" />
+
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="About VishTek Group | Electrical, Instrumentation & Oil/Gas Solutions UAE" />
+  <meta property="og:description" content="Discover VishTek Group’s mission, vision, and expertise in delivering high-quality industrial solutions across UAE & GCC." />
+  <meta property="og:image" content="https://vishtekgroup.github.io/assets/Vtb.png" />
+  <meta property="og:url" content="https://vishtekgroup.github.io/about.html" />
+  <meta property="og:type" content="website" />
 
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
   <link href="assets/styles.css" rel="stylesheet">
 
   <!-- JavaScript -->
-  <script src="assets/script.js" defer></script>
+  <script src="assets/Main.js" defer></script>
 
   <!-- Favicon -->
   <link rel="icon" href="assets/Vtb.png" type="image/png" />
-  <!-- Optional fallback -->
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  
 </head>
+
 <body>
 
 <!-- Header -->
+<!-- Updated Navigation Bar with Drawer -->
 <header class="fixed top-0 left-0 w-full z-50 bg-white shadow">
-  <div class="container mx-auto p-4">
-    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-4 sm:space-y-0">
-      <a href="index.html" class="flex items-center space-x-2 hover:opacity-80">
-        <img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
-        <h1 class="text-2xl sm:text-3xl font-bold text-[#000080]">VishTek Group</h1>
-      </a>
-      <nav class="flex flex-wrap gap-2 justify-center sm:justify-end">
-        <a href="index.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Home</a>
-        <a href="about.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">About Us</a>
-        <a href="products.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Products</a>
-        <a href="partners.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Our Partners</a>
-        <a href="contact.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Contact Us</a>
-        <a href="careers.html" class="text-sm sm:text-base text-[#000080] hover:text-yellow-400">Careers</a>
-      </nav>
-    </div>
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Logo & Title -->
+    <a href="index.html" class="flex items-center space-x-2">
+      <img src="assets/Vtb.png" alt="VishTek Logo" width="45" height="45">
+      <h1 class="text-2xl font-bold text-[#000080]">VishTek Group</h1>
+    </a>
+
+    <!-- Hamburger Menu (Mobile) -->
+    <button id="menuToggle" class="sm:hidden text-[#000080] text-3xl focus:outline-none">
+      &#9776;
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden sm:flex gap-4 text-[#000080]">
+      <a href="index.html" class="hover:text-yellow-400">Home</a>
+      <a href="about.html" class="hover:text-yellow-400">About Us</a>
+      <a href="products.html" class="hover:text-yellow-400">Our Products</a>
+      <a href="partners.html" class="hover:text-yellow-400">Our Partners</a>
+      <a href="contact.html" class="hover:text-yellow-400">Contact Us</a>
+      <a href="careers.html" class="hover:text-yellow-400">Careers</a>
+    </nav>
   </div>
+
+  <!-- Mobile Drawer Menu -->
+	<div id="mobileMenu" class="sm:hidden fixed top-0 left-0 h-full w-64 bg-white shadow transform -translate-x-full transition-transform duration-300 z-50">
+	  <div class="flex justify-between items-center p-4 border-b">
+		<h2 class="text-xl font-bold text-[#000080]">Menu</h2>
+		<button id="closeMenu" class="text-2xl text-[#000080]">&times;</button>
+	  </div>
+	  <nav class="flex flex-col p-4 text-[#000080]">
+		<a href="index.html" class="py-2 border-b hover:text-yellow-400">Home</a>
+		<a href="about.html" class="py-2 border-b hover:text-yellow-400">About Us</a>
+		<a href="products.html" class="py-2 border-b hover:text-yellow-400">Our Products</a>
+		<a href="partners.html" class="py-2 border-b hover:text-yellow-400">Our Partners</a>
+		<a href="contact.html" class="py-2 border-b hover:text-yellow-400">Contact Us</a>
+		<a href="careers.html" class="py-2 border-b hover:text-yellow-400">Careers</a>
+	  </nav>
+	</div>
+
+	<!-- Overlay for Drawer -->
+	<div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
 </header>
 
 <!-- About Section -->
@@ -75,7 +126,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="text-center p-4 text-sm">
+<footer class="bg-[#0a0f2c] text-center text-sm py-4 mt-12 border-t border-gray-700">
   &copy; 2025 VishTek Group
 </footer>
 
